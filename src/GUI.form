@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI">
+  <grid id="27dc6" binding="GeneralJPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="2197b" binding="headerPanel" layout-manager="BorderLayout" hgap="0" vgap="20">
+        <constraints border-constraint="North"/>
+        <properties>
+          <background color="-13607821"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="e1b5b" class="javax.swing.JLabel" binding="appName">
+            <constraints border-constraint="North"/>
+            <properties>
+              <font name="DialogInput" size="28" style="1"/>
+              <foreground color="-1"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <text value="Crypto Tool"/>
+              <verticalAlignment value="3"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <toolbar id="2a032" binding="toolBar">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fcda4" class="javax.swing.JLabel" binding="home">
+                <constraints/>
+                <properties>
+                  <font name="Courier New" size="18"/>
+                  <text value="Home"/>
+                </properties>
+              </component>
+              <component id="4fe45" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="c778f" class="javax.swing.JLabel" binding="about">
+                <constraints/>
+                <properties>
+                  <font name="Courier New" size="18"/>
+                  <text value="About"/>
+                </properties>
+              </component>
+              <component id="269af" class="javax.swing.JToolBar$Separator">
+                <constraints/>
+                <properties/>
+              </component>
+              <component id="842ba" class="javax.swing.JLabel" binding="help">
+                <constraints/>
+                <properties>
+                  <font name="Courier New" size="18"/>
+                  <text value="Help"/>
+                </properties>
+              </component>
+            </children>
+          </toolbar>
+        </children>
+      </grid>
+      <grid id="8e5c6" binding="bodyPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="83c70" class="javax.swing.JLabel" binding="chooseAlgoLabel">
+            <constraints/>
+            <properties>
+              <text value="Choose an algorithm to encrypt:"/>
+            </properties>
+          </component>
+          <component id="b9e0e" class="javax.swing.JComboBox" binding="algorithmsCombo">
+            <constraints/>
+            <properties>
+              <model>
+                <item value="OneTimePad"/>
+                <item value="AES"/>
+                <item value="DES"/>
+                <item value="RC4"/>
+                <item value="A51"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="b7247" binding="nextBtnPanel" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="2">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="fca89" class="javax.swing.JButton" binding="nextBtn">
+            <constraints/>
+            <properties>
+              <horizontalAlignment value="4"/>
+              <horizontalTextPosition value="4"/>
+              <text value="Next"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
